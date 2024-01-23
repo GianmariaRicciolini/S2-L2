@@ -9,8 +9,10 @@ const b = 15;
 
 if (a > b) {
   console.log("a è maggiore");
-} else {
+} else if (a < b) {
   console.log("b è maggiore");
+} else {
+  console.log("i numeri sono uguali");
 }
 
 /* ESERCIZIO 2
@@ -210,11 +212,19 @@ const me = {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+me.city = "Toronto";
+
+console.log(me);
+
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+delete me.lastName;
+
+console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
@@ -222,14 +232,38 @@ const me = {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+me.skills.pop();
+
+console.log(me);
+
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let emptyArray = [];
+
+emptyArray.push(1);
+emptyArray.push(2);
+emptyArray.push(3);
+emptyArray.push(4);
+emptyArray.push(5);
+emptyArray.push(6);
+emptyArray.push(7);
+emptyArray.push(8);
+emptyArray.push(9);
+emptyArray.push(10);
+
+console.log(emptyArray);
+
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+emptyArray.pop();
+emptyArray.push(100);
+
+console.log(emptyArray);
