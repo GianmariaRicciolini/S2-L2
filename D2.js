@@ -116,29 +116,27 @@ const num1 = 100;
 const num2 = 150;
 const num3 = 250;
 
-console.log("prima " + num1 + "\t" + num2 + "\t" + num3);
-
-// num1 num2 num3*     num1 num3 num2*    num2 unm1 num3    num2 num3 num1   num3 num1 num2*   num3 num2 num1
+// num1 num2 num3*     num1 num3 num2*    num2 num1 num3    num2 num3 num1   num3 num1 num2*   num3 num2 num1
 
 if (num1 > num2) {
   if (num1 > num3) {
     if (num2 > num3) {
-      console.log("dopo " + num1 + "\t" + num2 + "\t" + num3);
+      console.log("num1 num2 num3");
     } else {
-      console.log("dopo " + num1 + "\t" + num3 + "\t" + num2);
+      console.log("num1 num3 num2");
     }
   } else {
-    console.log("dopo " + num3 + "\t" + num1 + "\t" + num2);
+    console.log("num3 num1 num2");
   }
 } else {
   if (num2 > num3) {
     if (num1 > num3) {
-      console.log("dopo " + num2 + "\t" + num1 + "\t" + num3);
+      console.log("num2 num1 num3");
     } else {
-      console.log("dopo " + num2 + "\t" + num3 + "\t" + num1);
+      console.log("num2 num3 num1");
     }
   } else {
-    console.log("dopo " + num3 + "\t" + num2 + "\t" + num1);
+    console.log("num3 num2 num1");
   }
 }
 
@@ -148,11 +146,33 @@ if (num1 > num2) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+if (typeof num1 === "number") {
+  console.log("è un numero!");
+} else {
+  console.log("Non è un numero");
+}
+
+const string = "string";
+
+if (typeof string === "number") {
+  console.log("è un numero!");
+} else {
+  console.log("Non è un numero");
+}
+
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const evenOrOdd = 17;
+
+if (evenOrOdd % 2 === 0) {
+  console.log("Even!");
+} else {
+  console.log("Odd!");
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -167,6 +187,16 @@ if (num1 > num2) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let val = 7;
+
+if (val < 5) {
+  console.log("Meno di 5");
+} else if (val < 5) {
+  console.log("Meno di 10");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
