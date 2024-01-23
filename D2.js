@@ -52,20 +52,29 @@ if (d % 5 === 0) {
 const x = 16;
 const y = 8;
 
+// First block
 if (x || y === 8) {
   console.log("uno è uguale a 8");
+  if (x === 8) {
+    console.log("x è uguale a 8!");
+  } else {
+    console.log("y è uguale a 8!");
+  }
 } else {
   console.log("nessuno è uguale a 8");
 }
 
-if (x + y || x - y === 8) {
+// Second block
+if (x + y === 8 || x - y === 8 || y - x === 8) {
   if (x + y === 8) {
     console.log("l'addizione è 8");
   } else {
     console.log("l'addizione non è 8");
   }
   if (x - y === 8) {
-    console.log("la sottrazione è 8");
+    console.log("x - y è la sottrazione = a 8");
+  } else if (y - x === 8) {
+    console.log("y - x è la sottrazione = a 8");
   } else {
     console.log("la sottrazione non è 8");
   }
